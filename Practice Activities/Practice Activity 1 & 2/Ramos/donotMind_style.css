@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.banner {
+    max-width: 100%;
+    height: auto;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -72,7 +76,18 @@ hr {
     padding: 30px;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    height: fit-content;             
 }
+.container{
+    display: flex;       
+    gap: 20px;        
+}
+
+.main-content {
+  flex: 3;             
+}
+
 /* This is the heading for "Quick Status" */
 .quickStatus h2 {
     font-size: 24px;

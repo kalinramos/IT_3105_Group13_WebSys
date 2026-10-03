@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Portal</title>
+    <link rel="stylesheet" href="donotMind_style.css">
+  </head>
+  
+  <header>
+    <h1>Student Information Form</h1>
+    <p>Welcome to the centralized web system and technologies module test hub.</p>
+    
+    <nav>
+      <a href = "">Profile | </a>
+      <a href = "">Academics | </a>
+      <a href = "">Feedback Form</a>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <aside class = "quickStatus">
+      <h2>Quick Status</h2>
+      <p><strong>Status:</strong> Active Enrollee</p>
+      <p><em>Term:</em> Midterms</p>
+    </aside>
+
+    <main class="main-content">
+      <h2>1. Personal Background</h2>
+      <section>
+        <h3>About Me</h3>
+        <br>
+        <span>
+          <p><strong>Kalin Marie Faye M. Ramos</strong> studies at <em>Batangas State University-Alangilan Campus</em> as a BSIT student.</p>
+          <p>Kalin enjoys <i>reading</i>, <i>painting</i>, and <i>experimenting</i> with various aspects of <b>HTML and CSS</b> in her spare time.</p>
+        </span>
+      </section>
+
+      <section>
+        <h3>Media & Multimedia</h3>
+        <br>
+        <figure>
+          <img class="banner" src="group13-banner.png">
+          <figcaption>Group 13</figcaption>
+        </figure>
+      </section>
+      
+      <hr>
+
+      <h2>2. Academic Grades Overview</h2>
+      <table border = "1">
+        <tr>
+          <th>Student Name</th>
+          <th>Subject</th>
+          <th>Marks</th>
+        </tr>
+        <tr>
+          <td rowspan = "2">Kalin Ramos</td>
+          <td>Web Systems and Tech</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>Introduction to Computing</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td colspan = "2">GWA</td>
+          <td>95 (Passed)</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <h2>3. Student Feedback & Registration Form</h2>
+      <form>
+        <label for = "fullname">Full Name:</label>
+        <input type = "text" name = "fullname" id = "fullname" placeholder = "Enter your full name">
+        <br><br>
+        
+        <label for = "phoneNumber">Phone Number (Format: https:// or pattern-based):</label>
+        <br>
+        <input type = "phoneNumber" name = "phoneNumber" id = "phoneNumber" placeholder = "123-456-7890">
+        <br><br>
+
+        <label for = "programTrack">Select Program Track</label>
+        <br>
+        <select id = "programTrack">
+          <option value = "compSci">Computer Science</option>
+          <option value = "it">Information Technology</option>
+        </select>
+        <br><br>
+
+        <label for = "favLang">Favorite Languange (Datalist):</label>
+        <input type = "favLang" name = "favLang" id = "favLang" >
+        <br><br>
+
+        <label for= "electives">Select Electives (Zero or More):</label>
+        <br>
+        <input type = "checkbox" id = "char1" name="char1" value = "UI/UX Design">
+        <label for = "char1">UI/UX Design</label>
+        <br>
+        
+        <input type = "checkbox" id = "char2" name="char2" value = "Advanced Networking">
+        <label for = "char1">Advanced Networking</label>  
+        <br><br>
+      
+        <label for = "file">Upload Document/File:</label> <br>
+        <input type = "file" id ="file">
+        <br><br><br>
+
+        <button>Submit Data</button>
+        <button>Reset Form</button>
+        <button>Click me!</button>
+      </form>
+  </main>
+  </div>
+</html>
